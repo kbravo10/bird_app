@@ -30,6 +30,6 @@ class BirdByID(Resource):
         return make_response(jsonify(bird), 200)
 
 
-api.add_resource(Birds, '/')
+api.add_resource(Birds, '/birds')
 api.add_resource(BirdByID, '/birds/<int:id>')
 
